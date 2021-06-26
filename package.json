@@ -4,11 +4,16 @@
   "description": "## Your Task",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "seed": "node seeds/seed.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SarehonTaylor/TechBlog.git"
+    "url": "git+https://github.com/SarehonTaylor/TechBlog.git",
+    "bcrypt": "^5.0.1",
+    "connect-session-sequelize": "^7.1.1",
+    "dotenv": "^8.2.0"
   },
   "author": "",
   "license": "ISC",
@@ -19,6 +24,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^5.3.0",
+    "express-session": "^1.17.1",
     "mysql2": "^2.2.5",
     "sequelize": "^6.6.2"
   }
