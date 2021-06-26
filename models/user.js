@@ -39,14 +39,24 @@ User.init(
   {
     hooks: {
       beforeCreate: async (newUserData) => {
+        try {
         newUserData.password = await bcrypt.hash(newUserData.password, 10);
         return newUserData;
+    } catch (err) {
+        res.status(500).json(err.message);
+        }
       },
       beforeUpdate: async (updatedUserData) => {
+        try {
         updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
         return updatedUserData;
+    
+    } catch (err) {
+        res.status(500).json(err.message);
+      }
       },
     },
+    sequelize,
     sequelize,
     timestamps: false,
     freezeTableName: true,

@@ -9,8 +9,8 @@ defaultValue: DataTypes.NOW,
 user_id: {
 type: DataTypes.INTEGER,
 references: {
-  model: 'user',
-@@ -41,7 +40,7 @@ Comment.init(
+model: 'user',
+Comment.init(
 timestamps: false,
 freezeTableName: true,
 underscored: true,
