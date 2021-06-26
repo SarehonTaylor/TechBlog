@@ -33,3 +33,6 @@ router.delete('/:id', withAuth, async (req, res) => {
   } catch (err) {
     res.status(500).json(message);
   }
+});
+
+module.exports = rputer;
