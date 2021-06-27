@@ -20,6 +20,14 @@ User.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    // email: {
+    //   type: DataTypes.STRING,
+    //   allowNull: false,
+    //   unique: true,
+    //   validate: {
+    //     isEmail: true,
+    //   },
+    // },
     password: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -34,21 +42,20 @@ User.init(
         try {
         newUserData.password = await bcrypt.hash(newUserData.password, 10);
         return newUserData;
-    } catch (err) {
+      } catch (err) {
         res.status(500).json(err.message);
-        }
+      }
       },
       beforeUpdate: async (updatedUserData) => {
         try {
         updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
         return updatedUserData;
-    
-    } catch (err) {
+
+      } catch (err) {
         res.status(500).json(err.message);
       }
       },
     },
-    sequelize,
     sequelize,
     timestamps: false,
     freezeTableName: true,
