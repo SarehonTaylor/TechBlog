@@ -1,7 +1,7 @@
 {
   "name": "tech-blog",
   "version": "1.0.0",
-  "description": "## Your Task",
+  "description": "A Tech blog",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,9 +11,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SarehonTaylor/TechBlog.git",
-    "bcrypt": "^5.0.1",
-    "connect-session-sequelize": "^7.1.1",
-    "dotenv": "^8.2.0"
+    "bcrypt": "^5.0.1"
   },
   "author": "",
   "license": "ISC",
