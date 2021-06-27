@@ -14,16 +14,6 @@ const seedDatabase = async () => {
     returning: true,
   });
 
-  // const posts = await Post.bulkCreate(postData, {
-  //   individualHooks: true,
-  //   returning: true,
-  // });
-
-  // const comments = await Comment.bulkCreate(commentData, {
-  //   individualHooks: true,
-  //   returning: true,
-  // });
-
   for (const post of postData) {
     await Post.create({
       ...post,
@@ -47,5 +37,3 @@ const seedDatabase = async () => {
     res.status(500).json(err.message);
   }
 };
-
-seedDatabase();
