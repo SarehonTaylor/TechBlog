@@ -8,7 +8,7 @@ const commentFormHandler = async (event) => {
     if (content && event.target.hasAttribute('data-id')) {
       const id = event.target.getAttribute('data-id');
       // Send a POST request to the API endpoint
-      const response = await fetch(`/api/comments/${id}`, {
+      const response = await fetch(`/api/comment/${id}`, {
         method: 'POST',
         body: JSON.stringify({ content }),
         headers: { 'Content-Type': 'application/json' },
