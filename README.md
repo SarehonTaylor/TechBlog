@@ -10,7 +10,7 @@
 * [Test](#test)
 * [Questions](#questions)
 ## Description
-![image](https://user-images.githubusercontent.com/74032335/123571322-f9728e80-d797-11eb-87b6-c9fcd0e6a564.png)
+![image]![image](https://user-images.githubusercontent.com/74032335/124537282-9a3ffa00-dde7-11eb-8ccf-0d71bdeaecad.png)
 
 This application allows you to have your own blog, with the ability to make/update threads and have users inact via posts.
 ## Installation
