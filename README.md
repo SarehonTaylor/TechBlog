@@ -23,7 +23,7 @@ MIT License
 SarehonTaylor
 ## Test
 To Start, Run Node Server.JS and then open your browser and go to http://127.0.0.1:3001 from there you can create a user, sign in and begin posting!
-Youtube Demo: https://youtu.be/AaY9e0QPnXk
+Deployed Application: https://thetechblogg.herokuapp.com/
 ## Questions
 If you would like to contact me I can be reached at:
 Github:[SarehonTaylor]
